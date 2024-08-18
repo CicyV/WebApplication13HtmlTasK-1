@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bo {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            background-color: #f4f4f4;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            grid-gap: 10px;
+            margin-left: 20px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .item1 {
+            grid-column: 1/ span 2;
+        }
+
+        .itemfull {
+            grid-column: 1/ span 8;
+        }
+
+        .item2 {
+            grid-column: 3 / span 8;
+        }
+
+        .item3 {
+            grid-column: 3/ span 2;
+        }
+
+        .item3f {
+            grid-column: 3/ span 5;
+        }
+
+        .item4 {
+            grid-column: 3/ span 8;
+        }
+
+        .item32 {
+            grid-column: 6/ span 5;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .header {
+            background-color: #34315c;
+            color: #fff;
+            padding: 30px 30px;
+            display: flex;
+            gap: 1000px;
+        }
+
+        .h {
+            background-color: #fff;
+            padding: 20px 0;
+        }
+
+        .header img {
+            max-width: 1500px;
+            max-height: 1000px;
+            margin-left: 30px;
+        }
+
+        .footer {
+            background-color: #34315c;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body class="bo">
+    <div class="h">
+        <p> </p>
+    </div>
+    <header class="header">
+        <div style="text-align: left;">
+            <br />
+            <img src="pic2.jpeg" alt="Harmony Society Logo"><br />
+            <h2>Harmony</h2>
+            <h3 style="margin-left:20px;">Society</h3>
+        </div>
+
+
+        <div style="text-align: right;">
+            <a href="tel:+12107888829" style="color: white;">
+                <i class="fas fa-phone-alt"></i> 210-788-8829
+            </a>
+
+            <h3>
+                <i class="fas fa-envelope"></i> harmonysociety@mail.com
+            </h3>
+
+            <h3>
+                <i class="fas fa-globe"></i>
+                <a href="http://www.harmonysociety.com" style="color: white;">www.harmonysociety.com</a>
+            </h3>
+        </div>
+
+    </header>
+    <h1 style="margin-left:20px;">Register for Membership</h1>
+
+    <div class="container">
+        <div class="item1">
+            <h2 style="background-color: #edb123; font-color: #34315c;">Personal Information</h2>
+        </div>
+        <div class="item1">
+            <label for="full-name">Full Name:</label>
+        </div>
+        <div class="item2">
+            <input type="text" id="full-name" name="full-name">
+        </div>
+        <div class="item1">
+            <label for="address">Address :</label>
+
+        </div>
+        <div class="item2">
+            <input type="text" id="full-name" name="full-name">
+        </div>
+
+        <div class="item1">
+            <label for="date">Date of Birth:</label>
+
+        </div>
+        <div class="item3f">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+        </div>
+
+        <!--<div class="item11">
+            <div><input type="text" id="month" name="month" placeholder="Date"></div>
+
+        </div>
+        <div class="item11">
+            <div><input type="text" id="month" name="month" placeholder="Month"></div>
+
+        </div>
+        <div class="item11">
+            <div><input type="text" id="month" name="year" placeholder="Year"></div>
+
+        </div>-->
+        <div class="item11">
+            <div><label for="gender">   Gender:</label></div>
+
+        </div>
+        <div class="item11">
+            <input type="radio" id="male" name="gender" value="Male" style="width: 30px; height: 30px;">
+            <label for="male">Male</label>
+        </div>
+        <div class="item11">
+            <input type="radio" id="female" name="gender" value="Female" style="width: 30px; height: 30px;">
+            <label for="female">Female</label>
+        </div>
+        <div class="item1">
+            <label for="phone-number">Phone Number:</label>
+
+        </div>
+        <div class="item3">
+            <input type="text" id="phone-number" name="phone-number">
+        </div>
+        <div class="item11">
+            <div><label for="email">E-mail:</label></div>
+
+        </div>
+        <div class="item32"><input type="email" id="email" name="email"></div>
+
+    </div>
+    <div class="container">
+
+        <h2 style="background-color: #edb123; font-color: #34315c;">Membership Information</h2>
+        <div class="item1">
+            <input type="checkbox" id="individual-membership" name="individual-membership" value="individual-membership" style="width: 30px; height: 30px;">
+            <label for="individual-membership">Individual Membership</label>
+        </div>
+        <div class="item2">
+            <input type="checkbox" id="Student Membership(Attach valid Student ID)" name="Student Membership(Attach valid Student ID)" value="Student Membership(Attach valid Student ID)" style="width: 30px; height: 30px;">
+            <label for="Student Membership(Attach valid Student ID)">Student Membership(Attach valid Student ID)</label>
+
+        </div>
+        <div class="item1">
+            <input type="checkbox" id="family-membership" name="family-membership" value="family-membership" style="width: 30px; height: 30px;">
+            <label for="family-membership">Family Membership</label>
+        </div>
+        <div class="item2">
+            <input type="checkbox" id="senior-citizen-membership" name="senior-citizen-membership" value="senior-citizen-membership" style="width: 30px; height: 30px;">
+            <label for="senior-citizen-membership">Senior Citizen Membership</label>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="item1">
+            <h2 style="background-color: #edb123; font-color: #34315c;">Emergency Contact</h2>
+        </div>
+        <div class="item1">
+            <label for="full-name">Full Name:</label>
+        </div>
+        <div class="item2">
+            <input type="text" id="full-name" name="full-name">
+        </div>
+
+        <div class="item1">
+            <label for="phone-number">Phone Number:</label>
+
+        </div>
+        <div class="item3">
+            <input type="text" id="phone-number" name="phone-number">
+        </div>
+        <div class="item11">
+            <div><label for="email">E-mail:</label></div>
+
+        </div>
+        <div class="item32"><input type="email" id="email" name="email"></div>
+
+    </div>
+
+    <div class="container">
+        <div class="item1">
+            <h2 style="background-color: #edb123; font-color: #34315c;">Additional Information</h2>
+        </div>
+
+        <div class="itemfull">
+            <label for="additional-info">Please indicate any specific interests, skills, or areas of expertise you would like to contribute to the organization:</label>
+            <textarea id="additional-info" name="additional-info" rows="8"></textarea>
+        </div>
+
+
+    </div>
+    <footer class="footer">
+    </footer>
+
+</body>
+</html>
